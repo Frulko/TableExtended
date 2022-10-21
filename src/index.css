@@ -12,7 +12,12 @@
 }
 
 :root{
-  --even-background: #ff780069;
+  --even-background: #457b9d;
+  --even-color: white;
+}
+
+body{
+  background-color: #f1faee;
 }
 
 .app{
@@ -28,7 +33,7 @@
 
 .root-editable-table table {
   table-layout: fixed;
-  background-color: #fff;
+  background-color: #e63946;
   width: 100%;
   /* max-width: 450px; */
   margin: 1rem auto;
@@ -37,14 +42,25 @@
   width: 100%;
   /* border: 1px solid black; */
   border: 0px solid;
+
+  /* border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+  border: 1px solid #1d3557; */
 }
 
+
+.root-editable-table table caption{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 
 .root-editable-table table tbody{
   background-color: #fff;
 }
 .root-editable-table table tbody:nth-child(even) {
   background-color: var(--even-background);
+  color: var(--even-color);
 }
 
 .root-editable-table table tr {
@@ -54,20 +70,20 @@
 .root-editable-table table tr td:first-child{
   /* width: 70%; */
   text-align: left;
-  border-left: 1px solid lightgray;
+  border-left: 1px solid #1d3557
 }
 
 .root-editable-table table tr:last-child td{
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #1d3557;
 }
 
 .root-editable-table table td {
   text-align: left;
   position: relative;
   padding: 1rem;
-  border-right: 1px solid lightgray;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  border-right: 1px solid #1d3557;
+  border-top: 1px solid #1d3557;
+  border-bottom: 1px solid #1d3557;
   min-width: 50px;
 }
 
@@ -116,3 +132,21 @@
 
 
 
+
+
+.focus{
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.5);
+  border: 1px solid #e63946;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+}
+
+.origin{
+  position: absolute;
+  top: 1;
+  left: 4;
+  font-size: 8px;
+}
