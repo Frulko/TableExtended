@@ -192,6 +192,28 @@ const SAMPLE_5_4 = {
 }
 
 
+const E_SAMPLE_1_0 = {
+  name: 'E_SAMPLE_1_0',
+  matrix: [
+    [0, 0, 0, 1, 1],
+    [1, 0, 0, 1, 1],
+    [1, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0],
+    [1, 1, 1, 0, 0],
+    [1, 1, 1, 0, 0],
+    [1, 1, 1, 1, 1],
+  ],
+  links: [
+    { type: 'cross', y: 0, x: 0, w: 3, h: 1 },
+    // { type: 'cross', y: 1, x: 1, w: 2, h: 3 },
+    { type: 'cross', y: 2, x: 3, w: 2, h: 2 },
+    { type: 'cross', y: 4, x: 3, w: 2, h: 2 },
+    { type: 'cross', y: 1, x: 1, w: 1, h: 3 },
+    { type: 'cross', y: 1, x: 2, w: 1, h: 2 },
+    // { type: 'row', y: 3, x: 1, l: 2 }
+  ],
+}
+
 export const SAMPLES = [
   SAMPLE_0,
   SAMPLE_1,
@@ -204,4 +226,8 @@ export const SAMPLES = [
   SAMPLE_5_2, // not finished
   SAMPLE_5_3,
   SAMPLE_5_4
+];
+
+export const ERROR_SAMPLES = [
+  E_SAMPLE_1_0
 ];

@@ -1,4 +1,4 @@
-const { SAMPLES } = require("./constants");
+const { SAMPLES, ERROR_SAMPLES } = require("./constants");
 const { generateTableFromMatrix } = require("./table");
 
 
@@ -32,11 +32,14 @@ const generateTable = ({ name, matrix, links }) => {
  * add documentation on how it working
  * add extension system like tinymce for add new capabilities in richtext edition (like emoji, pricing, etc... customization)
  * add drag n drop resize (percentatge ?) column width ? height ?
+ * 
+ * row selection highlight (integration test)
+ * column selection highlight (integration test)
  */
 
 
 SAMPLES.forEach(generateTable);
-console.log('SAMPLES', SAMPLES.length)
+ERROR_SAMPLES.forEach(generateTable);
 
 
 if (module.hot) {
