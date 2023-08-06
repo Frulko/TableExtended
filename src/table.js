@@ -56,7 +56,7 @@ export const generateTableFromMatrix = (name= '', matrix, indexed_cross) => {
         }
       }
 
-      td.addEventListener('dblclick', (e) => {
+      td.addEventListener('click', (e) => {
         const tdRect = td.getBoundingClientRect();
         focusEl.style.opacity = 1;
         focusEl.style.top = `${tdRect.top + window.scrollY}px`;
