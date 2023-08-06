@@ -182,9 +182,11 @@ const SAMPLE_5_4 = {
   ],
   links: [
     { type: 'cross', y: 0, x: 0, w: 3, h: 1 },
-    { type: 'cross', y: 1, x: 1, w: 2, h: 3 },
+    // { type: 'cross', y: 1, x: 1, w: 2, h: 3 },
     { type: 'cross', y: 2, x: 3, w: 2, h: 2 },
     { type: 'cross', y: 4, x: 3, w: 2, h: 2 },
+    { type: 'cross', y: 1, x: 1, w: 1, h: 3 },
+    { type: 'cross', y: 1, x: 2, w: 1, h: 3 },
     // { type: 'row', y: 3, x: 1, l: 2 }
   ],
 }
